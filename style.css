@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Special Elite';
+    scroll-behavior: smooth;
+    background-color: #0d1117;
+    color: #CCCCCC;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    
+}
+
+.side-bar{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:#112233 ;
+    justify-content: space-between;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.side-bar a{
+    width: 300px;
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 20px;
+
+    transition: 0.2s;
+    color: white;
+}
+
+.side-bar a:hover{
+    transform: scale(1.5);
+    /* box-shadow: 0 0 8px rgba(0,0,0,0.2); */
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.introduction , .javascriptandjava , .helloworld , .variables{
+    display:flex ;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.whatyoushouldknow ul{
+    margin-top: 40px;
+}
+li{
+    margin-bottom: 20px;
+    
+}
+
+code{
+    background-color: #112233;
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+}
